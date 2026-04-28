@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>'Contato - Meu Site'</title>
+</head>
+
+<body>
+    <header>
+        <h1>Enzo Benjamin de Oliveira Pedroso</h1>
+
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">inicio</a></li>
+            <li><a href="sobre.html">sobre</a></li>
+            <li><a href="contato.html">contato</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <form action="Obrigado.html" method="get">
+            <fieldset>
+                <legend>Dados pessoais</legend>
+                <div class="campo">
+                    <label for="nome">Nome completo</label>
+                    <input type="text" id="nome" name="nome" placeholder="seu nome completo" required minlength="3">
+                </div>
+
+                <!-- campos aqui -->
+            </fieldset>
+            <fieldset>
+                <legend>Mensagem</legend>
+                <!-- campos aqui -->
+                <select id="assunto" name="assunto" required>
+                    <option value="">Selecione o assunto</option>
+                    <option value="orçamento">orçamento</option>
+                    <option value="suporte">Suporte tecnico</option>
+                    <option value="parceria">Parceria</option>
+                </select>
+
+                <textarea id="Mensagem" name="mensagem" rows="5" minlength="20" required
+                    placeholder="descreva seu projeto..."></textarea>
+            </fieldset>
+            <div class="botoes">
+                <button type="reset">limpar formulário</button>
+                <button type="submit">enviar mensagem</button>
+            </div>
+        </form>
+        <table>
+            <caption>Horarios de Atendimento</caption>
+            <thead>
+                <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Horários</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Seg-Sex</td>
+                    <td>8h-18h</td>
+                </tr>
+                <tr>
+                    <td>Sábado</td>
+                    <td>9h-13h</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">Domingo: fechado</td>
+                </tr>
+            </tfoot>
+
+        </table>
+    </main>
+    <footer>Enzo Benjamin</footer>
+</body>
+
+</html>
