@@ -26,7 +26,7 @@ body {
 .hero {
   background:
     linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
-    url('../img/conato.jpg') center/cover no-repeat;
+    url('../img/produtos.jpg') center/cover no-repeat;
   height: 420px;
   display: flex;
   align-items: center;
