@@ -49,13 +49,35 @@ body {
   color: #f1f5f9;
   text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
 }
-
+/* CSS — grade de cards */
+.grade {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 50px 40px;
+}
+.card {
+  flex: 1 1 200px;
+  max-width: 280px;
+  background: white;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
 /* ==========================================
    MENU DE NAVEGAÇÃO
 ========================================== */
 header {
-  background-color: #075985;
+background-color: #075985;
+color: #ffffff;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 nav {
@@ -78,6 +100,24 @@ nav a:hover {
   background-color: rgba(255, 255, 255, 0.15);
   transform: translateY(-2px);
   text-decoration: none;
+}
+
+/* Hover nos cards */
+.card {
+  transition: transform .2s, box-shadow .2s;
+}
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0,0,0,.12);
+}
+
+/* Hover nos botões */
+.btn-primario {
+  transition: background .2s, transform .1s;
+}
+.btn-primario:hover {
+  filter: brightness(.9);
+  transform: translateY(-2px);
 }
 
 /* ==========================================
@@ -153,4 +193,10 @@ footer {
   margin-top: 40px;
   font-size: 0.95rem;
 }
-
+.footer-grid {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+}
+.footer-col { flex: 1; min-width: 180px; }
