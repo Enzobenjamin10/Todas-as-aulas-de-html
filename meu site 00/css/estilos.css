@@ -77,6 +77,41 @@ body {
   display: flex;
   flex-direction: column;
 }
+/* 5. INTERIOR DO CARD */
+.card-img {
+  height:          160px;
+  background:      linear-gradient(135deg, #fff7ed, #fdba74);
+  display:         flex;
+  align-items:     center;
+  justify-content: center;
+  font-size:       2.5rem;
+}
+
+.card-body {
+  display:        flex;
+  flex-direction: column;
+  padding:        16px;
+  flex:           1; /* cresce para igualar altura */
+}
+
+.card-desc {
+  flex:          1; /* empurra botão para baixo */
+  font-size:     .9rem;
+  color:         var(--texto-2);
+  margin-bottom: 14px;
+}
+
+.btn-card {
+  background:    var(--primaria);
+  color:         white;
+  padding:       9px 16px;
+  border-radius: 8px;
+  text-align:    center;
+  font-weight:   600;
+  font-size:     .9rem;
+  transition:    background .2s;
+}
+.btn-card:hover { background: var(--secundaria); }
 /* ==========================================
    MENU DE NAVEGAÇÃO
 ========================================== */

@@ -51,18 +51,29 @@ body {
 .grade {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center; /* centraliza os cards */
   gap: 20px;
   padding: 50px 40px;
 }
+
 .card {
-  flex: 1 1 200px;
-  max-width: 280px;
+  width: 280px;
   background: white;
+  border-radius: 12px;
   overflow: hidden;
+
   display: flex;
   flex-direction: column;
 }
-/* ==========================================
+
+/* imagem do card */
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+/* =========================================
    MENU DE NAVEGAÇÃO
 ========================================== */
 header {
