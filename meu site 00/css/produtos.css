@@ -18,6 +18,14 @@ body {
   line-height: 1.6;
   color: #334155;
   background-color: #f8fafc;
+
+ background: linear-gradient(
+    135deg,
+    #12161f,
+    #30333a,
+    #666b6d
+  );
+
 }
 
 /* ==========================================
@@ -27,10 +35,13 @@ body {
   background:
     linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
     url('../img/produtos.jpg') center/cover no-repeat;
+
   height: 420px;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
   text-align: center;
   color: white;
   padding: 20px;
@@ -47,47 +58,27 @@ body {
   color: #f1f5f9;
   text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
 }
-/* CSS — grade de cards */
-.grade {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; /* centraliza os cards */
-  gap: 20px;
-  padding: 50px 40px;
-}
 
-.card {
-  width: 280px;
-  background: white;
-  border-radius: 12px;
-  overflow: hidden;
-
-  display: flex;
-  flex-direction: column;
-}
-
-/* imagem do card */
-.card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  display: block;
-}
-/* =========================================
+/* ==========================================
    MENU DE NAVEGAÇÃO
 ========================================== */
 header {
-background-color: #075985;
-color: #ffffff;
+  background-color: #075985;
+  color: #ffffff;
+
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+
   display: flex;
   align-items: center;
   justify-content: space-between;
+
   padding: 0 40px;
+
   position: sticky;
   top: 0;
   z-index: 100;
 }
+
 nav {
   display: flex;
   justify-content: center;
@@ -101,30 +92,12 @@ nav a {
   padding: 10px 18px;
   border-radius: 8px;
   font-weight: 600;
+
   transition: background 0.3s, transform 0.2s;
 }
 
 nav a:hover {
   background-color: rgba(255, 255, 255, 0.15);
-  transform: translateY(-2px);
-  text-decoration: none;
-}
-
-/* Hover nos cards */
-.card {
-  transition: transform .2s, box-shadow .2s;
-}
-.card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 24px rgba(0,0,0,.12);
-}
-
-/* Hover nos botões */
-.btn-primario {
-  transition: background .2s, transform .1s;
-}
-.btn-primario:hover {
-  filter: brightness(.9);
   transform: translateY(-2px);
 }
 
@@ -132,7 +105,7 @@ nav a:hover {
    CONTEÚDO PRINCIPAL
 ========================================== */
 main {
-  max-width: 900px;
+  max-width: 1200px;
   margin: 40px auto;
   padding: 0 20px;
 }
@@ -147,14 +120,106 @@ section {
 h2 {
   font-size: 1.8rem;
   color: #0284c7;
+
   border-left: 5px solid #0284c7;
   padding-left: 12px;
+
   margin-bottom: 15px;
 }
 
 p {
   margin-bottom: 12px;
-  color: #475569;
+  color: #0284c7;
+}
+
+/* ==========================================
+   GRADE DOS CARDS
+========================================== */
+.grade {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  gap: 25px;
+
+  padding: 30px 0;
+}
+
+/* ==========================================
+   CARD
+========================================== */
+.card {
+  width: 300px;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+}
+
+.card p {
+  flex-grow: 1;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+
+  box-shadow: 0 10px 25px rgba(0,0,0,.18);
+}
+
+/* imagem do card */
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+  background-color: #f1f5f9;
+  padding: 10px;
+}
+/* conteúdo do card */
+.card h3 {
+  font-size: 1.4rem;
+  color: #000000;
+
+  padding: 15px 20px 10px;
+}
+
+.card p {
+  padding: 0 20px;
+  flex-grow: 1;
+}
+
+/* área do botão */
+.card-content {
+  padding: 20px;
+}
+
+/* botão */
+.btn {
+  display: inline-block;
+
+  width: 100%;
+
+  background-color: #0284c7;
+  color: white;
+
+  text-align: center;
+  text-decoration: none;
+
+  padding: 12px;
+
+  border-radius: 8px;
+
+  font-weight: bold;
+
+  transition: background .2s, transform .1s;
+}
+
+.btn:hover {
+  background-color: #075985;
+  transform: translateY(-2px);
 }
 
 /* ==========================================
@@ -166,15 +231,19 @@ ul {
 
 ul li {
   padding: 10px 0 10px 22px;
-  border-bottom: 1px solid #e2e8f0;
+
+  border-bottom: 1px solid #0284c7;
+
   position: relative;
-  color: #475569;
+  color: #0284c7;
 }
 
 ul li::before {
   content: "›";
+
   color: #0284c7;
   font-weight: bold;
+
   position: absolute;
   left: 0;
 }
@@ -194,17 +263,30 @@ a:hover {
    RODAPÉ
 ========================================== */
 footer {
-  background-color: #1e293b;
-  color: rgba(255, 255, 255, 0.8);
+  background-color: #075985;
+
+  color: rgba(0, 0, 0, 0.8);
+
   text-align: center;
+
   padding: 30px 20px;
   margin-top: 40px;
+
   font-size: 0.95rem;
 }
+footer p{
+  color: black;
+}
+
 .footer-grid {
   display: flex;
   gap: 40px;
   flex-wrap: wrap;
+
   margin-bottom: 32px;
 }
-.footer-col { flex: 1; min-width: 180px; }
+
+.footer-col {
+  flex: 1;
+  min-width: 180px;
+}

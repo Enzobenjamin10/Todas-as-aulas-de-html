@@ -18,6 +18,14 @@ body {
   line-height: 1.6;
   color: #334155;
   background-color: #f8fafc;
+
+ background: linear-gradient(
+    135deg,
+    #12161f,
+    #30333a,
+    #666b6d
+  );
+
 }
 
 /* ==========================================
@@ -146,7 +154,7 @@ h2 {
 
 p {
   margin-bottom: 12px;
-  color: #475569;
+  color: #0284c7;
 }
 
 /* ==========================================
@@ -158,9 +166,9 @@ ul {
 
 ul li {
   padding: 10px 0 10px 22px;
-  border-bottom: 1px solid #e2e8f0;
+  border-bottom: 1px solid #0284c7;
   position: relative;
-  color: #475569;
+  color: #0284c7;
 }
 
 ul li::before {
@@ -186,12 +194,16 @@ a:hover {
    RODAPÉ
 ========================================== */
 footer {
-  background-color: #1e293b;
-  color: rgba(255, 255, 255, 0.8);
+  background-color: #075985;
+  color: rgba(0, 0, 0, 0.8);
   text-align: center;
   padding: 30px 20px;
   margin-top: 40px;
   font-size: 0.95rem;
+}
+footer p {
+ color: black;
+
 }
 .footer-grid {
   display: flex;
